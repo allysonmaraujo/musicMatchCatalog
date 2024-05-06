@@ -4,7 +4,7 @@ public class Audio {
     private String titulo;
     private int duracao;
     private int totalDeReproducoes;
-    private int curtidas;
+    private int totalDeCurtidas;
     private double classificacao;
 
     public String getTitulo() {
@@ -23,8 +23,8 @@ public class Audio {
         return totalDeReproducoes;
     }
 
-    public int getCurtidas() {
-        return curtidas;
+    public int getTotalDeCurtidas() {
+        return totalDeCurtidas;
     }
 
     public double getClassificacao() {
@@ -32,10 +32,12 @@ public class Audio {
     }
 
     public void curte(){
-        this.curtidas++;
+        this.totalDeCurtidas++;
     }
 
     public void reproduz(){
         this.totalDeReproducoes++;
     }
+
+
 }
